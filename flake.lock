@@ -1,5 +1,34 @@
 {
   "nodes": {
+    "click": {
+      "inputs": {
+        "flake-lib": [
+          "huggingface-hub",
+          "flake-lib"
+        ],
+        "flake-utils": [
+          "huggingface-hub",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "huggingface-hub",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788072753,
+        "narHash": "sha256-T3n8ymVEu5eMpUs+RE+XXVb4A08EwJ85SoTA0VTn2h8=",
+        "owner": "jgus",
+        "repo": "click-flake",
+        "rev": "63aa55e96c2b70256ced69e674e4a184cb713378",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jgus",
+        "repo": "click-flake",
+        "type": "github"
+      }
+    },
     "flake-lib": {
       "inputs": {
         "flake-utils": [
@@ -10,11 +39,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788033723,
-        "narHash": "sha256-gFkBFDMnq6tVlRxJMd7669h8EXvTejql8KYw7JJR+v0=",
+        "lastModified": 1788138353,
+        "narHash": "sha256-CJy+J5cGaMP8vVsx4PnXnZAf+eSxvMhXykJ4i/pTeXc=",
         "owner": "jgus",
         "repo": "flake-lib",
-        "rev": "3b1d5f92b60f1403dd5d054ddfb8bad0d2b1135e",
+        "rev": "4e15e882c119458ded6ae4e393268225675e6a95",
         "type": "github"
       },
       "original": {
@@ -42,6 +71,63 @@
         "type": "github"
       }
     },
+    "hf-xet": {
+      "inputs": {
+        "flake-lib": [
+          "huggingface-hub",
+          "flake-lib"
+        ],
+        "flake-utils": [
+          "huggingface-hub",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "huggingface-hub",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788073039,
+        "narHash": "sha256-j9Si9fHgw0V1bHMHuRDGLPLy++uSKGamKCBDjUkDOnI=",
+        "owner": "jgus",
+        "repo": "hf-xet-flake",
+        "rev": "cfd0936f1927d31898b4e340c5ab7593493d622c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jgus",
+        "repo": "hf-xet-flake",
+        "type": "github"
+      }
+    },
+    "huggingface-hub": {
+      "inputs": {
+        "click": "click",
+        "flake-lib": [
+          "flake-lib"
+        ],
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "hf-xet": "hf-xet",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788075153,
+        "narHash": "sha256-auNKoqpjv4jiVl5dF23S8+aHHOB+tp4E881sdS29tVo=",
+        "owner": "jgus",
+        "repo": "huggingface-hub-flake",
+        "rev": "820a34ba5bb04ab4f51853d5a873c57522876f78",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jgus",
+        "repo": "huggingface-hub-flake",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1787964612,
@@ -62,6 +148,7 @@
       "inputs": {
         "flake-lib": "flake-lib",
         "flake-utils": "flake-utils",
+        "huggingface-hub": "huggingface-hub",
         "nixpkgs": "nixpkgs"
       }
     },
